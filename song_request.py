@@ -1,4 +1,5 @@
-# once pip install pynput done
+# once pip install pynput done and pip install pywhatkit
+import pywhatkit
 import logging
 import webbrowser, threading
 from pynput.keyboard import Key, Controller
@@ -23,3 +24,6 @@ def search(song):
   run()
   
 search(song)
+
+# command = input("Enter your song : ")
+# pywhatkit.playonyt(command)
