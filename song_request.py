@@ -17,8 +17,9 @@ def run():
   threading.Timer(1.25, lambda: webbrowser.open_new(url)).start()
   for select_searchbar() in range(4):
     select_searchbar()  
-  keyboard.press(song)
+  keyboard.type(song)
   keyboard.press(Key.enter)
+  keyboard.release(Key.enter)
   
 def search(song):
   run()
